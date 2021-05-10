@@ -1,0 +1,19 @@
+.primary_color{
+    -fx-background-color: #181818 ;
+}
+.secondary_color{
+    -fx-background-color: #121212 ;
+}
+.selected{
+    -fx-border-color: #1BD8E0;
+    -fx-border-width: 0 0 0 5
+
+}
+.search-bar{
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+}
+.search-box{
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+}
