@@ -17,3 +17,6 @@
     -fx-background-color: white;
     -fx-background-radius: 30;
 }
+.transparent{
+    -fx-background-color: transparent;
+}
