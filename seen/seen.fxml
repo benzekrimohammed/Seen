@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,14 +12,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="primary_color" stylesheets="@seen.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox prefHeight="890.0" prefWidth="214.0" spacing="20.0" styleClass="secondary_color" stylesheets="@seen.css" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../frontend%20HTML%20+CSS/needed%20for%20my%20projects/seen/more.png" />
+                  <Image url="@img/more.png" />
                </image>
                <VBox.margin>
                   <Insets left="20.0" top="20.0" />
@@ -30,7 +30,7 @@
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../frontend%20HTML%20+CSS/needed%20for%20my%20projects/seen/home.png" />
+                              <Image url="@img/home.png" />
                            </image>
                         </ImageView>
                         <Label alignment="CENTER" prefHeight="24.0" prefWidth="83.0" text="Home" textFill="WHITE">
@@ -44,7 +44,7 @@
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../frontend%20HTML%20+CSS/needed%20for%20my%20projects/seen/compass.png" />
+                              <Image url="@img/compass.png" />
                            </image>
                         </ImageView>
                         <Label alignment="CENTER" prefHeight="24.0" prefWidth="83.0" text="Explore" textFill="#a1a1a1">
@@ -56,9 +56,9 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView blendMode="SRC_ATOP" fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../frontend%20HTML%20+CSS/needed%20for%20my%20projects/seen/bookmark.png" />
+                              <Image url="@img/bookmark.png" />
                            </image>
                         </ImageView>
                         <Label alignment="CENTER" prefHeight="24.0" prefWidth="83.0" text="Wishlist" textFill="#a1a1a1">
@@ -78,9 +78,9 @@
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="1101.0">
                <children>
-                  <ImageView fitHeight="65.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../frontend%20HTML%20+CSS/needed%20for%20my%20projects/seen/popcorn.png" />
+                        <Image url="@img/popcorn.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="10.0" />
@@ -112,7 +112,26 @@
                   </HBox>
                </children>
             </HBox>
-            <Region prefHeight="200.0" prefWidth="200.0" style="-fx-border-radius: 20;" />
+            <VBox prefWidth="100.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="161.0" text="Trending" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <ScrollPane prefHeight="250.0" prefWidth="1035.0" styleClass="transparent" stylesheets="@seen.css">
+                     <content>
+                        <HBox fx:id="cardLayout" prefHeight="227.0" prefWidth="2000.0" styleClass="transparent" stylesheets="@seen.css" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
          </children>
       </VBox>
    </center>

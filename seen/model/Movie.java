@@ -38,6 +38,5 @@ public class Movie {
     public void setStatus(String Status) {
         this.Status = Status;
     }
-    
 
 }

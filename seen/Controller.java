@@ -43,6 +43,7 @@ public class Controller implements Initializable {
         }
     }
     private List<Movie> geTrendingmovies(){
+        int i =0;
         List<Movie> movies = new ArrayList<>();
         JSONArray result = Unirest.get("https://api.themoviedb.org/3/trending/all/week?api_key=e435f0564b2644afbd7d653bf76e7634")
 				       .asJson()
@@ -51,7 +52,7 @@ public class Controller implements Initializable {
 				       .getJSONArray("result");
         img_file_path=result.getJSONObject(i).get("poster_path").toString();
         if(result!=null)
-        for (int i = 0; i < result.length(); i++) {
+        for (i = 0; i < result.length(); i++) {
             Movie movie = new Movie();
             movie.setPoster(base_img_url+poster_width+img_file_path);
             movie.setName(result.getJSONObject(i).get("title").toString());

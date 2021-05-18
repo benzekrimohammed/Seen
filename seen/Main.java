@@ -16,11 +16,10 @@ public class Main extends Application {
     public void start(Stage stage)  throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("seen.fxml"));
         Parent root = loader.load();
-        Controller controller = loader.getController();
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Calculator :)");
+        stage.setTitle("Seen");
         stage.show();
     }
 }
