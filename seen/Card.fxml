@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seen.Cardcontroller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seen.Cardcontroller">
    <children>
-      <ImageView fx:id="img" fitHeight="210.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="name" alignment="CENTER" prefHeight="54.0" prefWidth="219.0" />
+      <StackPane alignment="BOTTOM_RIGHT" prefHeight="251.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="210.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox prefHeight="1.0" prefWidth="1.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/favourites.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="rate" prefHeight="16.0" prefWidth="43.0">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </StackPane>
+      <Label fx:id="name" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="39.0" prefWidth="200.0" wrapText="true" />
    </children>
 </VBox>

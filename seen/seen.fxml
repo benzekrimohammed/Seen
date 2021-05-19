@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="primary_color" stylesheets="@seen.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="primary_color" stylesheets="@seen.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seen.Controller">
    <left>
       <VBox prefHeight="890.0" prefWidth="214.0" spacing="20.0" styleClass="secondary_color" stylesheets="@seen.css" BorderPane.alignment="CENTER">
          <children>
@@ -125,9 +125,9 @@
                         <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
                      </padding>
                   </Label>
-                  <ScrollPane prefHeight="250.0" prefWidth="1035.0" styleClass="transparent" stylesheets="@seen.css">
+                  <ScrollPane prefHeight="279.0" prefWidth="1101.0" styleClass="primary_color" stylesheets="@seen.css">
                      <content>
-                        <HBox fx:id="cardLayout" prefHeight="227.0" prefWidth="2000.0" styleClass="transparent" stylesheets="@seen.css" />
+                        <HBox fx:id="cardLayout" prefHeight="0.0" prefWidth="0.0" styleClass="transparent" stylesheets="@seen.css" />
                      </content>
                   </ScrollPane>
                </children>

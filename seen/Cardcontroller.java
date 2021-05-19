@@ -11,10 +11,13 @@ public class Cardcontroller {
 
     @FXML
     private Label name;
+    @FXML
+    private Label rate;
 
     public void setData(Movie movie){
-        Image image = new Image(getClass().getResourceAsStream(movie.getPoster()));
+        Image image = new Image(movie.getPoster());
         img.setImage(image);
         name.setText(movie.getName()); 
+        rate.setText(movie.getRating());
     }
 }
